@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <title>JS Bucles</title>
     <script>
-        var edad = 50;
-        if (edad > 18) {
-            console.log("Edad correcta");
+        let confirmar = confirm("Seguro que desea proceder?");
+        if (confirmar) {
+            console.log("Cuenta borrada");
+        } else {
+            console.log("Acción abortada");
         }
-        console.log("Aquí va el resto del programa");
+
+        console.log(Boolean(confirmar));
+        // String vacío se convierte a false, y distinto de vacío a true.
+
+
     </script>
 </head>
 <body>
