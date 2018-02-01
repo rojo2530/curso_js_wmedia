@@ -12,7 +12,20 @@
     <title>JS Bucles</title>
     <script>
         var colores = ['rojo', 'verde', 'blanco', 'azul'];
+        console.log(colores.indexOf('verde'));
+        console.log(colores.indexOf('morado'));
 
+        function borrarElementoMatriz(elemento, matriz) {
+            var indice = matriz.indexOf(elemento);
+            if (indice > -1) {
+                matriz.splice(indice, 1);
+            } else {
+                //elemento no existe
+                alert("No se ha encontrado el elemento");
+            }
+        }
+
+        borrarElementoMatriz('blanco', colores);
 
     </script>
 </head>
